@@ -1,13 +1,12 @@
 //to find element in an infinite array
-package BinarySearch;
 
+package BinarySearch;
 public class BS6 {
     public static void main(String[] args) {
         int[] arr={2,4,6,7,8,9,45,76,78,89,
                   10,134,266,787,888,3456};
         int target= 266;
         System.out.println(ans(arr,target));
-
     }
     static int ans(int[] arr, int target){
         // first find the range
@@ -21,9 +20,7 @@ public class BS6 {
             end = end + (end-start+1)*2;
             start = temp;
         }
-
         return binarySearch(arr,target,start,end);
-        
     }
     static int binarySearch(int[] arr, int target, int start, int end){
         while(start<=end){
