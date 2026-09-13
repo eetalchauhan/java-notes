@@ -6,7 +6,6 @@ public class BS7 {
         int target=2;
         int ans= mountain(arr);
         System.out.println(ans);
-
     }
     public static int mountain(int[] arr) {
         int start=0;
